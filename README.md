@@ -15,13 +15,13 @@
 * Parcel also minifies on build
 * Using [jest](https://jestjs.io/) for tests
 * The `run-s` in the package.json script is just a shortcut for the `npm-run-all` program. It runs the scripts in serial (one after the other).
-* The `size-check` npm script runs the [bundlesize](https://github.com/siddharthkp/bundlesize) app. It runs agains the snowpack output files. It doesnt check the aggregate, only the individual files.
 * We are using the following babel plugins, presets and macros:
   * `@babel/preset-env` https://babeljs.io/docs/en/babel-preset-env
   * `@babel/preset-react` https://babeljs.io/docs/en/babel-preset-react
   * `inline-replace-variables` to replace the `ISDEV` variable with whether or not `process.env.NODE_ENV !== 'production'` : https://github.com/wssgcg1213/babel-plugin-inline-replace-variables
   * `param.macro`  https://github.com/citycide/param.macro
   * `ms.macro` https://github.com/knpwrs/ms.macro#readme
+* The `watchreload` key in package.json is for [parcel-plugin-watch-reload](https://github.com/hirasso/parcel-plugin-watch-reload), it allows us to reload the page on server change too.
 
 ###### Additional notes:
 * Try to lessen the use of external libraries as it all adds up
