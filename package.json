@@ -13,7 +13,7 @@
     "prod-parcel-build": "cross-env NODE_ENV=production parcel build frontend/js/index.js --out-dir dist/bundles --no-source-maps",
     "prod-show-report": "cpy dist/bundles/report.html ./ && trash dist/bundles/report.html && open-cli ./report.html",
     "prod-test": "jest",
-    "prod-lint": "eslint"
+    "prod-lint": "eslint frontend/**/*.js backend/**/*.js"
   },
   "watchreload": {
     "files": "backend/**/*"
