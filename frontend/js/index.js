@@ -1,6 +1,8 @@
+// @ts-ignore
+if (module.hot) module.hot.accept()
 import React from "react"
 import ReactDOM from "react-dom"
-import "./styles.css"
+import "../css/index.css"
 
 
 var mountNode = document.getElementById("app")
