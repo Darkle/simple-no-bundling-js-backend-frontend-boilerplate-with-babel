@@ -6,6 +6,9 @@
 * Reload webpage for frontend change
 * Reload server for backend change
 
+###### Compromises:
+* We forgo cache busting via hashing for js as there doesnt seem to be a way to tell parcel to do that if its not handling the html file. 
+  * Although it is still possible to do it on the server via the [ETag](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/ETag)
 
 ###### Setup details:
 * Backend uses expressjs for the server

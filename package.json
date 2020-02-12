@@ -10,7 +10,7 @@
     "dev-watch-parcel": "delay 2 && cross-env NODE_ENV=development parcel watch frontend/js/index.js --out-dir dist/bundles",
     "dev-watch-server": "cross-env NODE_ENV=development nodemon --watch backend --ext js,liquid backend/index.js",
     "prod": "run-s prod-**",
-    "prod-parcel-build": "cross-env NODE_ENV=production parcel build frontend/js/index.js --out-dir dist/bundles --no-source-maps",
+    "prod-parcel-build": "cross-env NODE_ENV=production parcel build frontend/js/index.js --out-dir dist/bundles --no-source-maps --detailed-report",
     "prod-show-report": "cpy dist/bundles/report.html ./ && trash dist/bundles/report.html && open-cli ./report.html",
     "prod-test": "jest",
     "prod-lint": "eslint frontend/**/*.js backend/**/*.js"
