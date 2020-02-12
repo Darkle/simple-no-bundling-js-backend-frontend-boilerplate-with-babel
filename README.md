@@ -1,1 +1,1 @@
-# simple-no-bundling-js-backend-frontend-boilerplate-with-babel
+# simple-bundling-js-backend-frontend-boilerplate
