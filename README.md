@@ -11,8 +11,9 @@
 * Backend uses expressjs for the server
 * The express view engine used is [liquid](https://github.com/harttle/liquidjs/wiki/Use-with-Expressjs)
 * Using [nodemon](https://github.com/remy/nodemon/) for reloading the server on backend changes
-* [Parcel](https://parceljs.org/hmr.html) for reloading the web page on frontend changes
-* Parcel also minifies on build
+* [Parcel](https://parceljs.org) for bundling
+  * Parcel also reloads the page on frontend change
+  * Parcel also minifies on build
 * Using [jest](https://jestjs.io/) for tests
 * The `run-s` in the package.json script is just a shortcut for the `npm-run-all` program. It runs the scripts in serial (one after the other).
 * We are using the following babel plugins, presets and macros:
