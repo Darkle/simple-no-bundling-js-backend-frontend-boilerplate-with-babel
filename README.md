@@ -1,11 +1,5 @@
 ##### Simple Bundling JS Server & Web Boilerplate
 
-
-###### Goals:
-* Simple/Minimal
-* Reload webpage for frontend change
-* Reload server for backend change
-
 ###### Compromises:
 * We forgo cache busting via hashing for js as there doesnt seem to be a way to tell parcel to do that if its not handling the html file. 
   * Although it is still possible to do it on the server via the [ETag](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/ETag)
@@ -22,10 +16,15 @@
 * We are using the following babel plugins, presets and macros:
   * `@babel/preset-env` https://babeljs.io/docs/en/babel-preset-env
   * `@babel/preset-react` https://babeljs.io/docs/en/babel-preset-react
+  * `@babel/preset-flow` https://babeljs.io/docs/en/babel-preset-flow to strip out the flow types
   * `inline-replace-variables` to replace the `ISDEV` variable with whether or not `process.env.NODE_ENV !== 'production'` : https://github.com/wssgcg1213/babel-plugin-inline-replace-variables
   * `param.macro`  https://github.com/citycide/param.macro
   * `ms.macro` https://github.com/knpwrs/ms.macro#readme
-* The `watchreload` key in package.json is for [parcel-plugin-watch-reload](https://github.com/hirasso/parcel-plugin-watch-reload), it allows us to reload the page on server change too.
+* We are using [flow](https://flow.org) for type checking on frontend and backend
+  * It is set up in the eslint config and also as a npm script to check on build
+  * For some reason there is this file which breaks flow as it is not proper json so we have set flow to ignore it in the .flowconfig: .*/node_modules/@parcel/watcher/test/tmp/config.json
+  * Parceljs automatically strips the flow typings out
+  * We are using and npm script running babel to strip out the flow typings of the backend code. That's why we have the backend/src-js folder and the backend/lib-js folder.
 
 ###### Additional notes:
 * Try to lessen the use of external libraries as it all adds up
