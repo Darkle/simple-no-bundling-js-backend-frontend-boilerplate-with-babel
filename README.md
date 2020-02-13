@@ -23,7 +23,7 @@
   * `ms.macro` https://github.com/knpwrs/ms.macro#readme
 * We are using [flow](https://flow.org) for type checking on frontend and backend
   * It is set up in the eslint config and also as a npm script to check on build
-  * For some reason there is this file (/node_modules/@parcel/watcher/test/tmp/config.json) breaks flow as it is not proper json so we have set flow to ignore it in the `.flowconfig`
+  * For some reason this file (/node_modules/@parcel/watcher/test/tmp/config.json) breaks flow as it is not proper json so we have set flow to ignore it in the `.flowconfig`
   * Parceljs automatically strips the flow typings out
   * The `dev-watch-server-babel` npm script runs babel to strip out the flow typings of the backend code. That's why we have the backend/src-js folder and the backend/lib-js folder.
     * This script also uses the `--no-babelrc` so it doesnt use the frontend babel config.
