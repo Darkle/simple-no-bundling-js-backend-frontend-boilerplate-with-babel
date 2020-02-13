@@ -12,8 +12,8 @@
   * Parcel also reloads the page on frontend change
   * Parcel also minifies on build
 * Using [jest](https://jestjs.io/) for tests
-* The `run-s` in the package.json script is just a shortcut for the [npm-run-all](https://github.com/mysticatea/npm-run-all) program. It runs the npm prod scripts in serial (one after the other).
 * [concurrently](https://github.com/kimmobrunfeldt/concurrently) allows us to run all the dev scripts at once in parallel with one command.
+* The `run-s` in the package.json script is just a shortcut for the [npm-run-all](https://github.com/mysticatea/npm-run-all) program. It runs the npm prod scripts in serial (one after the other).
 * We are using the following babel plugins, presets and macros:
   * `@babel/preset-env` https://babeljs.io/docs/en/babel-preset-env
   * `@babel/preset-react` https://babeljs.io/docs/en/babel-preset-react
