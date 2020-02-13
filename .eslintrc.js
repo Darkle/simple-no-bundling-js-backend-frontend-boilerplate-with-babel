@@ -37,6 +37,10 @@ module.exports = {
     'complexity': ['error', 4],
     'consistent-return': 'error',
     'eqeqeq': 'error',
+    'flowtype/require-valid-file-annotation': [
+      2,
+      "always"
+    ],
     'guard-for-in': 'error',
     'handle-callback-err': 'error',
     'max-depth': ['error', 3],
