@@ -179,7 +179,7 @@ module.exports = {
     'react/jsx-max-depth': [1, { 'max': 4 }],
     'react/jsx-no-bind': [1, { 'allowArrowFunctions': true, 'allowFunctions': true }],
     'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'warn',
+    'react-hooks/exhaustive-deps': 'error',
     'react/no-did-update-set-state': 'error',
     'react/no-unknown-property': 'off',
     'require-atomic-updates': 'error',
