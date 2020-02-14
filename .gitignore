@@ -1,4 +1,5 @@
-report.html
+reports
 dist
 backend/lib-js
 flow-typed
+flow-coverage
