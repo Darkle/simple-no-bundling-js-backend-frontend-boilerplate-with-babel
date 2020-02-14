@@ -28,8 +28,8 @@
   * In prod, we the `prod-server-build` npm script that just uses babel to strip it out and outputs it to a `backend/lib-js`. That's why we have the backend/src-js folder and the backend/lib-js folder, so we can keep the same folder structure.
   * Both scripts use the `--no-babelrc` so it doesnt use the frontend babel config.
 * Using [jest](https://jestjs.io/) for tests
-* We have a bundle report on prod build that opens in the browser
-* We have a flow coverage report on prod build that opens in the browser
+* We have a js bundle report generated on prod build that opens in the browser
+* We have a flow coverage report generated on prod build that opens in the browser
 
 ###### Additional notes:
 * Try to lessen the use of external libraries as it all adds up
