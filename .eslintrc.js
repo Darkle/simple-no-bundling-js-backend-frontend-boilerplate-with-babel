@@ -25,6 +25,9 @@ module.exports = {
     greasemonkey: true,
   },
   settings: {
+    react:{
+      version: 'detect'
+    }
   },
   plugins: [
     'flowtype',
