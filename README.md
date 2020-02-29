@@ -32,5 +32,4 @@
 * We have a flow coverage report generated on prod build that opens in the browser
 
 ###### Additional notes:
-* Try to lessen the use of external libraries as it all adds up
 * Can use the [dynamic imports](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import#Dynamic_Imports) to load external libraries after the page has loaded
